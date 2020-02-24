@@ -31,7 +31,7 @@ class App extends React.Component {
           <button
             onClick={() =>
               this.setState(state => ({
-                text: state.text + '_hello'
+                text: state.text + (state.showChild ? '_hello' : '')
               }))
             }
           >
